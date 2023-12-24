@@ -40,6 +40,11 @@ p {
 
 }
 
+.home-cards-button:hover, .hero-button:hover {
+    background-color: #c4c4c4;
+    color: #121610;
+}
+
 
 .header {
     width: auto;
