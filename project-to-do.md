@@ -6,3 +6,5 @@ Use www.sharingexpress.com as an inspiration. Small website in the non-profit se
 4. the hover on the search should open a search bar
 
 5. Create a page for rendering page address and description of particular orphanage homes
+6. convert header nav items to a tags
+7. Change the find a home button to an input field. It only makes sense that way as this is the function of the website.

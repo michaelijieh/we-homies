@@ -2,6 +2,10 @@ body {
     background-color: #fdfcf8;
 }
 
+*:focus {
+    outline: none;
+}
+
 h1 {
     font-size: 80px;
     padding: 0;
@@ -40,7 +44,7 @@ p {
 
 }
 
-.home-cards-button:hover, .hero-button:hover {
+.home-cards-button:hover {
     background-color: #c4c4c4;
     color: #121610;
 }
@@ -60,8 +64,12 @@ p {
     height: 32px;
 }
 
+.logo-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .logoandtext {
-    width: 120px;
+    width: 132px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -84,39 +92,15 @@ p {
     padding: 8px 32px;
 }
 
-#search-button:hover {
-    /* border-style: none; */
-    width: 624px;
-    background-color: #FAF9F6;
-    border-radius: 4px;
-    padding: 8px 8px;
-    display: flex;
-    justify-content: right;
-}
-
-#search-button {
-    border-style: none;
-    background-color: inherit;
-    text-align: right;
-    color: black;
-    font-size: 12px;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-
-
 .nav-bar, .footer-nav-bar {
     font-size: 12px;
     font-weight: bold;
 }
 
-
 .footer-nav-text, .nav-text {
     all: unset;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
 
 .hero-section {
     width: auto;
@@ -143,6 +127,7 @@ p {
 }
 
 .hero-text h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     color: black;
     font-size: 16px;
@@ -156,14 +141,49 @@ p {
 }
 
 .hero-button {
-    padding: 16px 120px;
+    width: 272px;
+    padding: 16px 0;
     background-color: #121610;
     color: #c4c4c4;
-    border-radius: 48px;
     border-style: none;
     font-size: larger;
+    text-align: center;
+    border-radius: 32px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
 
 }
+
+.hero-button-text {
+    margin: 0 16px;
+    border-style: none;
+    outline: none;
+    width: auto;
+    background-color: inherit;
+    color: #c4c4c4;
+    
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-button-container-main {
+    display: flex;
+    justify-content: center;
+}
+
+#search-icon {
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+
+}
+
 
 .hero-image {
     position: absolute;
@@ -218,7 +238,7 @@ p {
 }
 
 .first-section {
-    margin-top: 48px;
+    margin-top: 64px;
     padding: 32px;
     width: auto;
     display: flex;
@@ -230,7 +250,6 @@ p {
 
 .first-section-text {
     text-align: left;
-    /* min-width: 35%; */
     width: 35%;
     height: auto;
     display: flex;
@@ -455,4 +474,144 @@ footer {
 
 .home-cards-main:nth-child(1) {
     box-shadow: 8px 0px #c4c4c4;
+}
+
+/* Result page */
+
+
+.results-section {
+    margin-top: 48px;
+    padding: 32px;
+    width: auto;
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    align-items: top;
+    
+}
+
+
+.results-section-text {
+    text-align: left;
+    /* min-width: 35%; */
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.results-section-text-small {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-style: normal;
+    
+}
+
+.results-section-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.results-section-items {
+    width: auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    column-gap: 16px;
+    row-gap: 16px;
+
+    align-items: baseline;
+}
+.results-section-image {
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+}
+
+.results-bottom-buttons {
+    padding: 0 24px;
+    display: flex;
+    justify-content: right;
+
+}
+
+.results-bottom-buttons p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 8px;
+    border-radius: 16px;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+    color: #121610;
+    opacity: 1;
+
+}
+
+.results-bottom-buttons p:hover {
+    padding: 8px;
+    border-radius: 16px;
+    background-color: #c4c4c45A;
+    font-weight: bolder;
+    color: #121610;
+
+}
+
+
+.result-button {
+
+    padding: 16px 0 16px 32px;
+    background-color: #121610;
+    color: #c4c4c4;
+    border-style: none;
+    font-size: larger;
+    text-align: left;
+    border-radius: 32px 0 0 32px;
+
+}
+
+.result-button-container {
+    border-style: none;
+    width: auto;
+    padding: 0 32px 0 0;
+    background-color: #121610;
+    color: #c4c4c4;
+    border-radius: 48px;
+    display:flex;
+    gap: 32px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.results-cards {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #FAF9F6;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: baseline;
+    
+}
+
+.results-cards img {
+    box-shadow: 0px 0px 0.2px #121610;
+
+}
+
+
+.results-cards p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    text-align: left;
+    width: auto;
+    color: #121610;
+    opacity: 1;
+    font-size: 10px;
+    
+
 }
