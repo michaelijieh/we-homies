@@ -17,10 +17,16 @@ function heroButtonOps () {
     searchIcon.style.display = "none";
     heroButtonText.style.textAlign = "center";
 
+    heroButtonText.addEventListener('click', () => {
+        // heroButton.style.backgroundColor = "#c4c4c4"
+        // heroButtonText.style.color = "#121610"
+
+        heroButtonText.placeholder = "Search homes"
+    })
+
     heroButtonText.addEventListener('keyup', () => {
 
         if (heroButtonText.value != "") {
-            console.log("y7es")
 
             searchIcon.style.display = "block";
             searchIcon.style.color = "red";
@@ -31,9 +37,9 @@ function heroButtonOps () {
         } else {
 
             searchIcon.style.display = "none";
-            searchIcon.style.color = "red";
 
             heroButtonText.style.textAlign = "center";
+            heroButtonText.style.color = "#c4c4c4";
 
         }
         

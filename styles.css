@@ -141,6 +141,7 @@ p {
 }
 
 .hero-button {
+    height: 24px;
     width: 272px;
     padding: 16px 0;
     background-color: #121610;
