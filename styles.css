@@ -632,10 +632,11 @@ footer p {
 
 .results-cards {
     padding: 8px;
+    
     border-radius: 8px;
     background-color: #FAF9F6;
     display: flex;
-    gap: 8px;
+    /* gap: 8px; */
     flex-direction: column;
     align-items: baseline;
     
