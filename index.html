@@ -10,15 +10,12 @@
         <script src="https://kit.fontawesome.com/fab4f97362.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        
         <header class="header">
             <div class="logoandtext">
                 <img class="logo" src="images/logo/we homies logo.png">
                 <p class="logo-text"><strong>we homies</strong></p>
             </div>
-
-            <nav class="nav-bar">
-                <!-- <input type="text" id="search-button" value="search"> -->
+            <nav class="nav-bar">                
                 <button class="nav-text">homes</button>
                 <button class="nav-text">cities</button>
                 <button class="nav-text">celebrate</button>
@@ -170,21 +167,25 @@
                         </h3>
                     </div>
                     <div class="hero-button-container-main">
-                        <div class="hero-button">
-                            <div class="search-icon-container">
-                                <a href="/pages/result-page.html" style="text-decoration: none;">
-                                    <i id="search-icon" class="fa-solid fa-magnifying-glass" style="color: #c4c4c4;" disabled="disabled"></i>
+                        <div class="hero-button-container">
+                            <div class="hero-button">
+                                <input class="hero-button-text" type="text" placeholder="Find a home" value="" size="23"/>
+                                <a class="a-wrapper" href="/pages/result-page.html">
+                                    <button class="search-button" type="button" disabled="true" >
+                                        <i id="hero-search-icon" class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
                                 </a>
                             </div>
-                            <input class="hero-button-text" type="text" placeholder="Find a home"/>
+                            <button class="search-button" type="button" disabled="true" >
+                                <i id="hero-clear-icon" class="fa-solid fa-xmark"></i>
+                            </button>
+                            
                         </div>
-
                     </div>
                     <div class="first-section">
                         <div class="first-section-text">
                             <h2><em>Celebrate your special day with us, in Lagos </em></h2>
                             <button class="home-cards-button">See more cities</button>
-                            
                         </div>
                         <div class="first-section-items">
                             <div class="home-cards">
@@ -219,12 +220,8 @@
                             
                         </div>
                     </div>
-
-                
                 </div>
-
             </div>
-            
         </section>
         <section class="second-section">
             <div class="second-section-text-container">
@@ -236,7 +233,6 @@
                     </p>
                 </div>
                 <button class="home-cards-button">Give</button>
-
             </div>
             <img class="home-cards-main" src="images/homes images/pexels-athena-1758152.jpg">
         </section>
@@ -286,11 +282,8 @@
                     </p>
                 </div>
                 <button class="home-cards-button">Start now</button>
-
             </div>
             <img class="home-cards-main" src="images/homes images/pexels-athena-1758152.jpg">
-
-            
         </section>
         <footer>
             <div class="first-section-footer">
@@ -311,7 +304,6 @@
                     <button class="footer-nav-text">Contact us</button>
                     <button class="footer-nav-text">About us</button>
                 </nav>
-                
             </div>
         </footer>
     </body>

@@ -8,3 +8,5 @@ Use www.sharingexpress.com as an inspiration. Small website in the non-profit se
 5. Create a page for rendering page address and description of particular orphanage homes
 6. convert header nav items to a tags
 7. Change the find a home button to an input field. It only makes sense that way as this is the function of the website.
+8. Build the individual pages as presented on the nav bar.
+9. Build the databases to hold the information of the orphanage homes.
